@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Split Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Split Calculator</h1>
+    <div class="calculator">
+        <div class="field">
+            <label for="billAmount">Общий счёт ($)</label>
+            <input type="number" id="billAmount" placeholder="Например: 1234" min="0" step="1" value="100">
+        </div>
+        <div class="field">
+            <label for="tipPercentage">Процент чаевых (%)</label>
+            <input type="number" id="tipPercentage" placeholder="Например: 15" min="0" max="100" step="1" value="10">
+        </div>
+        <div class="field">
+            <label for="numPeople">Количество человек</label>
+            <input type="number" id="numPeople" placeholder="Например: 4" min="1" step="1" value="2">
+        </div>
+        <button type="button" id="calculateBtn">Рассчитать</button>
+        <div class="results" id="results">
+            <p class="total" id="totalText">—</p>
+            <p class="per-person" id="perPersonText">—</p>
+        </div>
+        <div class="error" id="error"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
